@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "e8d59406-9481-4313-b5b1-25fb150f7075",
+		"_postman_id": "fd30d783-e06b-42b7-99f6-ffb43cbda5a6",
 		"name": "sqlverifier - create task validation",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "27247429-e8d59406-9481-4313-b5b1-25fb150f7075"
+		"_uid": "27247429-fd30d783-e06b-42b7-99f6-ffb43cbda5a6"
 	},
 	"item": [
 		{
@@ -15,7 +15,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e75d6cad-ecf8-409a-97da-5a926b9d3523",
+								"id": "d6eba715-33ef-4947-b603-243c20ddd8f9",
 								"exec": [
 									"let jsonBody = JSON.parse(responseBody)\r",
 									"pm.environment.set(\"adminToken\", jsonBody.id_token);\r",
@@ -37,7 +37,7 @@
 							}
 						}
 					],
-					"id": "536b2b78-73c0-4270-ba04-d59e8cb3b34d",
+					"id": "5c6c510d-9acd-4f85-8d14-0e33a2e3bf1f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -124,7 +124,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cd81b4da-fe6b-41c1-a1c5-744955d9a84b",
+								"id": "118fb760-0f69-4025-a1fd-c096044a52d3",
 								"exec": [
 									"let jsonBody = JSON.parse(responseBody)\r",
 									"\r",
@@ -156,7 +156,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "51ab3504-6400-419a-8263-0bba8e3ddd7f",
+								"id": "f9da3205-7a8c-4361-a95e-81830fd6c1a7",
 								"exec": [
 									""
 								],
@@ -164,7 +164,7 @@
 							}
 						}
 					],
-					"id": "50487906-d580-4148-a33c-550a31172258",
+					"id": "81a3e374-cc4c-45cc-b0bb-3f0d542affc5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {}
@@ -219,7 +219,7 @@
 					"response": []
 				}
 			],
-			"id": "75b332cb-4932-4b75-bc1f-6c2995897801"
+			"id": "c22febfb-2ad1-41bf-9228-305b21ac11d0"
 		},
 		{
 			"name": "sad path",
@@ -230,7 +230,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cd81b4da-fe6b-41c1-a1c5-744955d9a84b",
+								"id": "6cbf8d4a-aec5-4ce5-8c5d-0a9bd626c2fe",
 								"exec": [
 									"\r",
 									"pm.test(\"Status code is 401\", function () {\r",
@@ -251,7 +251,7 @@
 							}
 						}
 					],
-					"id": "8dab6487-9452-4bc9-bdbd-f9e915ff8545",
+					"id": "4cd3b89a-bf4a-47f0-b29b-f75b83d6affb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {}
@@ -304,7 +304,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cd81b4da-fe6b-41c1-a1c5-744955d9a84b",
+								"id": "c36b9db8-e1ba-46b2-a5b0-f1f77a00e4d9",
 								"exec": [
 									"\r",
 									"pm.test(\"Status code is 403\", function () {\r",
@@ -325,7 +325,7 @@
 							}
 						}
 					],
-					"id": "3f6c6d98-fb6c-4b21-9a13-2355ab367c95",
+					"id": "132c43a6-7ecd-4db2-8add-c0cfbbc0ca9a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {}
@@ -385,7 +385,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cd81b4da-fe6b-41c1-a1c5-744955d9a84b",
+								"id": "730d631a-a4be-4c32-b174-a7b821117cb3",
 								"exec": [
 									"\r",
 									"pm.test(\"Status code is 400\", function () {\r",
@@ -405,7 +405,7 @@
 							}
 						}
 					],
-					"id": "fc36c0bb-d912-423c-8b07-baa52e3f8476",
+					"id": "8378c54b-672a-4d42-baa1-617372a1f793",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {}
@@ -465,7 +465,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cd81b4da-fe6b-41c1-a1c5-744955d9a84b",
+								"id": "e7a58375-c608-41ba-a94b-9cc1064ace5c",
 								"exec": [
 									"\r",
 									"\r",
@@ -486,7 +486,7 @@
 							}
 						}
 					],
-					"id": "5718e91f-9a37-4288-88d7-08c8e25f934f",
+					"id": "4af62e1d-e814-4357-96d6-efc03018c2c5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {}
@@ -546,7 +546,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cd81b4da-fe6b-41c1-a1c5-744955d9a84b",
+								"id": "04bb7b74-32cc-461f-b5b9-d70c825c8d55",
 								"exec": [
 									"\r",
 									"pm.test(\"Status code is 400\", function () {\r",
@@ -566,7 +566,7 @@
 							}
 						}
 					],
-					"id": "5abef7dc-cb29-4aec-9e42-3a5e574a2977",
+					"id": "c53c10b1-f005-4381-81b3-73bcf686d69b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {}
@@ -626,7 +626,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cd81b4da-fe6b-41c1-a1c5-744955d9a84b",
+								"id": "dd29adfe-c97f-4c11-a056-550814804591",
 								"exec": [
 									"\r",
 									"pm.test(\"Status code is 501\", function () {\r",
@@ -645,7 +645,7 @@
 							}
 						}
 					],
-					"id": "11ca4c40-b9a7-4ba4-bfd3-e79712e95f86",
+					"id": "f550cda6-d7e9-413b-a6aa-6c933f0ecc7e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {}
@@ -700,127 +700,18 @@
 					"response": []
 				}
 			],
-			"id": "a4565e12-4eb1-44b1-9f66-d062a16eef6a"
+			"id": "9081597b-783d-49c0-9a3b-88870e234ac4"
 		},
 		{
 			"name": "create task - field validation",
 			"item": [
-				{
-					"name": "admin login",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "e75d6cad-ecf8-409a-97da-5a926b9d3523",
-								"exec": [
-									"let jsonBody = JSON.parse(responseBody)\r",
-									"pm.environment.set(\"adminToken\", jsonBody.id_token);\r",
-									"\r",
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Token provided\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.id_token).to.exist;\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Response time is less than 200ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "ed1c537c-1fc7-4885-a2dc-43c080d5d849",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json, text/plain, */*"
-							},
-							{
-								"key": "Accept-Language",
-								"value": "en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
-							},
-							{
-								"key": "Connection",
-								"value": "keep-alive"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Origin",
-								"value": "http://localhost:8080"
-							},
-							{
-								"key": "Referer",
-								"value": "http://localhost:8080/login"
-							},
-							{
-								"key": "Sec-Fetch-Dest",
-								"value": "empty"
-							},
-							{
-								"key": "Sec-Fetch-Mode",
-								"value": "cors"
-							},
-							{
-								"key": "Sec-Fetch-Site",
-								"value": "same-origin"
-							},
-							{
-								"key": "User-Agent",
-								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-							},
-							{
-								"key": "sec-ch-ua",
-								"value": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\""
-							},
-							{
-								"key": "sec-ch-ua-mobile",
-								"value": "?0"
-							},
-							{
-								"key": "sec-ch-ua-platform",
-								"value": "\"Windows\""
-							},
-							{
-								"key": "Authorization",
-								"value": "{{adminToken}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"{{adminUser}}\",\r\n    \"password\": \"{{adminPassword}}\",\r\n    \"rememberMe\": false\r\n}"
-						},
-						"url": {
-							"raw": "{{baseUrl}}api/authenticate",
-							"host": [
-								"{{baseUrl}}api"
-							],
-							"path": [
-								"authenticate"
-							]
-						}
-					},
-					"response": []
-				},
 				{
 					"name": "create task - happy path",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "cd81b4da-fe6b-41c1-a1c5-744955d9a84b",
+								"id": "7f066296-1870-4b5e-8de8-8cfe32ee688a",
 								"exec": [
 									"\r",
 									"\r",
@@ -843,9 +734,81 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b71d2516-d760-4c86-9adb-859230d7958b",
+								"exec": [
+									"console.log(\"Logging in as admin\");\r",
+									"\r",
+									"// Define the URL\r",
+									"\r",
+									"let baseUrl = pm.environment.get(\"baseUrl\")\r",
+									"\r",
+									"const url = baseUrl + 'api/authenticate';\r",
+									"const urlLogin = baseUrl + 'login';\r",
+									"\r",
+									"// Define the request payload\r",
+									"const payload = {\r",
+									"    username: \"admin\",\r",
+									"    password: \"admin\",\r",
+									"    rememberMe: false\r",
+									"};\r",
+									"\r",
+									"// Define the request options\r",
+									"const options = {\r",
+									"    url: url,\r",
+									"    method: \"POST\",\r",
+									"    header: {\r",
+									"        \"Accept\": \"application/json, text/plain, */*\",\r",
+									"    \"Accept-Language\": \"en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7\",\r",
+									"    \"Connection\": \"keep-alive\",\r",
+									"    \"Content-Type\": \"application/json\",\r",
+									"    \"Origin\": url,\r",
+									"    \"Referer\": urlLogin,\r",
+									"    \"Sec-Fetch-Dest\": \"empty\",\r",
+									"    \"Sec-Fetch-Mode\": \"cors\",\r",
+									"    \"Sec-Fetch-Site\": \"same-origin\",\r",
+									"    \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\",\r",
+									"    \"sec-ch-ua\": \"\\\"Google Chrome\\\";v=\\\"119\\\", \\\"Chromium\\\";v=\\\"119\\\", \\\"Not?A_Brand\\\";v=\\\"24\\\"\",\r",
+									"    \"sec-ch-ua-mobile\": \"?0\",\r",
+									"    \"sec-ch-ua-platform\": \"\\\"Windows\\\"\"\r",
+									"    },\r",
+									"    body: {\r",
+									"        mode: \"raw\",\r",
+									"        raw: JSON.stringify(payload)\r",
+									"    }\r",
+									"};\r",
+									"\r",
+									"\r",
+									"// Make the POST request\r",
+									"pm.sendRequest(options, function (err, response) {\r",
+									"    if (err) {\r",
+									"        console.error(\"Error:\", err);\r",
+									"    } else {\r",
+									"        try {\r",
+									"            // Check if the response body is not empty\r",
+									"            if (response.text()) {\r",
+									"                var jsonBody = response.json();\r",
+									"                console.log(\"Response:\", jsonBody);\r",
+									"                // Assuming there is an 'id_token' property in the response\r",
+									"                pm.environment.set(\"adminToken\", jsonBody.id_token);\r",
+									"            } else {\r",
+									"                console.error(\"Response body is empty\");\r",
+									"            }\r",
+									"        } catch (jsonError) {\r",
+									"            console.error(\"Error parsing JSON:\", jsonError);\r",
+									"            console.log(\"Response body:\", response.text());\r",
+									"        }\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
-					"id": "b965290f-0e58-4c83-bda8-0e5f41ce7d99",
+					"id": "7f01e64b-8448-4812-b8c1-b98716b10d68",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {}
@@ -905,7 +868,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cd81b4da-fe6b-41c1-a1c5-744955d9a84b",
+								"id": "2b78e143-564d-4897-bddc-d2ae8b07d321",
 								"exec": [
 									"\r",
 									"\r",
@@ -924,9 +887,81 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4c13e98a-0645-41ad-ac3e-dae3c95700e8",
+								"exec": [
+									"console.log(\"Logging in as admin\");\r",
+									"\r",
+									"// Define the URL\r",
+									"\r",
+									"let baseUrl = pm.environment.get(\"baseUrl\")\r",
+									"\r",
+									"const url = baseUrl + 'api/authenticate';\r",
+									"const urlLogin = baseUrl + 'login';\r",
+									"\r",
+									"// Define the request payload\r",
+									"const payload = {\r",
+									"    username: \"admin\",\r",
+									"    password: \"admin\",\r",
+									"    rememberMe: false\r",
+									"};\r",
+									"\r",
+									"// Define the request options\r",
+									"const options = {\r",
+									"    url: url,\r",
+									"    method: \"POST\",\r",
+									"    header: {\r",
+									"        \"Accept\": \"application/json, text/plain, */*\",\r",
+									"    \"Accept-Language\": \"en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7\",\r",
+									"    \"Connection\": \"keep-alive\",\r",
+									"    \"Content-Type\": \"application/json\",\r",
+									"    \"Origin\": url,\r",
+									"    \"Referer\": urlLogin,\r",
+									"    \"Sec-Fetch-Dest\": \"empty\",\r",
+									"    \"Sec-Fetch-Mode\": \"cors\",\r",
+									"    \"Sec-Fetch-Site\": \"same-origin\",\r",
+									"    \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36\",\r",
+									"    \"sec-ch-ua\": \"\\\"Google Chrome\\\";v=\\\"119\\\", \\\"Chromium\\\";v=\\\"119\\\", \\\"Not?A_Brand\\\";v=\\\"24\\\"\",\r",
+									"    \"sec-ch-ua-mobile\": \"?0\",\r",
+									"    \"sec-ch-ua-platform\": \"\\\"Windows\\\"\"\r",
+									"    },\r",
+									"    body: {\r",
+									"        mode: \"raw\",\r",
+									"        raw: JSON.stringify(payload)\r",
+									"    }\r",
+									"};\r",
+									"\r",
+									"\r",
+									"// Make the POST request\r",
+									"pm.sendRequest(options, function (err, response) {\r",
+									"    if (err) {\r",
+									"        console.error(\"Error:\", err);\r",
+									"    } else {\r",
+									"        try {\r",
+									"            // Check if the response body is not empty\r",
+									"            if (response.text()) {\r",
+									"                var jsonBody = response.json();\r",
+									"                console.log(\"Response:\", jsonBody);\r",
+									"                // Assuming there is an 'id_token' property in the response\r",
+									"                pm.environment.set(\"adminToken\", jsonBody.id_token);\r",
+									"            } else {\r",
+									"                console.error(\"Response body is empty\");\r",
+									"            }\r",
+									"        } catch (jsonError) {\r",
+									"            console.error(\"Error parsing JSON:\", jsonError);\r",
+									"            console.log(\"Response body:\", response.text());\r",
+									"        }\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
-					"id": "01e6bb29-7c38-4906-8d5c-33009bb51a07",
+					"id": "d194715e-7f9c-4b64-8121-917e3517f499",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {}
@@ -981,7 +1016,7 @@
 					"response": []
 				}
 			],
-			"id": "a3b9ec58-3e67-450d-9932-f9a5ccdf41ec"
+			"id": "cea1a271-d1a3-41c0-a80c-5c4f83040a43"
 		}
 	]
 }
