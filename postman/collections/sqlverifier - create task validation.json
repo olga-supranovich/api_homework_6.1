@@ -128,10 +128,10 @@
 								"exec": [
 									"let jsonBody = JSON.parse(responseBody)\r",
 									"\r",
-									"pm.environment.set(\"taskId\", jsonBody.id);\r",
-									"pm.environment.set(\"taskText\", jsonBody.text);\r",
-									"pm.environment.set(\"taskAnswer\", jsonBody.answer);\r",
-									"pm.environment.set(\"taskTitle\", jsonBody.title);\r",
+									"pm.collectionVariables.set(\"taskId\", jsonBody.id);\r",
+									"pm.collectionVariables.set(\"taskText\", jsonBody.text);\r",
+									"pm.collectionVariables.set(\"taskAnswer\", jsonBody.answer);\r",
+									"pm.collectionVariables.set(\"taskTitle\", jsonBody.title);\r",
 									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -745,14 +745,19 @@
 									"// Define the URL\r",
 									"\r",
 									"let baseUrl = pm.environment.get(\"baseUrl\")\r",
+									"let usernameAdmin = pm.environment.get(\"adminUser\")\r",
+									"let passwordAdmin = pm.environment.get(\"adminPassword\")\r",
 									"\r",
 									"const url = baseUrl + 'api/authenticate';\r",
 									"const urlLogin = baseUrl + 'login';\r",
 									"\r",
+									"\r",
+									"\r",
+									"\r",
 									"// Define the request payload\r",
 									"const payload = {\r",
-									"    username: \"admin\",\r",
-									"    password: \"admin\",\r",
+									"    username: usernameAdmin,\r",
+									"    password: passwordAdmin,\r",
 									"    rememberMe: false\r",
 									"};\r",
 									"\r",
@@ -898,14 +903,16 @@
 									"// Define the URL\r",
 									"\r",
 									"let baseUrl = pm.environment.get(\"baseUrl\")\r",
+									"let usernameAdmin = pm.environment.get(\"adminUser\")\r",
+									"let passwordAdmin = pm.environment.get(\"adminPassword\")\r",
 									"\r",
 									"const url = baseUrl + 'api/authenticate';\r",
 									"const urlLogin = baseUrl + 'login';\r",
 									"\r",
 									"// Define the request payload\r",
 									"const payload = {\r",
-									"    username: \"admin\",\r",
-									"    password: \"admin\",\r",
+									"    username: usernameAdmin,\r",
+									"    password: passwordAdmin,\r",
 									"    rememberMe: false\r",
 									"};\r",
 									"\r",
@@ -1017,6 +1024,68 @@
 				}
 			],
 			"id": "cea1a271-d1a3-41c0-a80c-5c4f83040a43"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "62af355e-2f8b-4ffc-82d9-0c0318e8b4fc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d6cdb2ea-66cd-494e-b8cb-37386301a77a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "dcaf50bf-acdb-4612-9807-6d6648c92a73",
+			"key": "taskId",
+			"value": ""
+		},
+		{
+			"id": "1dcef689-65ed-4bf2-8d8d-f096d70aae0e",
+			"key": "taskText",
+			"value": ""
+		},
+		{
+			"id": "aa3f4468-6e11-4b45-9f6d-381e90d3c8a9",
+			"key": "taskAnswer",
+			"value": ""
+		},
+		{
+			"id": "ae9d655a-50f6-474e-8bde-3ba1b878dd20",
+			"key": "taskTitle",
+			"value": ""
+		},
+		{
+			"id": "fc8dd64f-399d-40f4-89f7-2b511f031b47",
+			"key": "invalidText",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "6b7dc8a8-16fd-4232-be24-fc5bec9d78bc",
+			"key": "invalidAnswer",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "bb63a2cb-4d40-4b91-897b-aec47c4b9b1a",
+			"key": "invalidTitle",
+			"value": "",
+			"type": "string"
 		}
 	]
 }
