@@ -27,7 +27,9 @@
 ### 2. Set Environment Variables
 
 1. From GitHub repository download file **sqlverifier-live-test.postman_environment.json** import it in Postman.
-2. Select imported **sqlverifier-live-test** with the necessary variables.
+2. Select imported **sqlverifier-live-test** with the necessary variables. Remember variables are set on 2 levels:
+   - **Environment Variables**: baseUrl, adminUser, adminPassword, adminToken
+   - **Collection Variables**: taskId, taskText, taskAnswer, taskTitle, invalidToken, invalidText, invalidAnswer, invalidTitle 
 
 ### 3. Run the Collection with data file
 1. From GitHub repository download file **test_data.csv**.
